@@ -1,0 +1,203 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background-color: #081b29;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(70, 33, 130);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: aqua;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: -3px 0;
+    color: aqua;
+}
+.home-content p {
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.home-sci a {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    margin-right: 15px;
+}
+.home-sci a:hover {
+    background: aqua;
+    color: #081b08;
+    box-shadow: 0 0 20px aqua;
+}
+
+/* Image */
+.image-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, aqua, transparent 60%);
+    padding: 5px;
+}
+.image-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid aqua;
+}
+
+/* About Section */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    padding: 70px 10%;
+}
+.about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, aqua, transparent 60%);
+    padding: 2px;
+}
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid aqua;
+}
+.about-text h2 {
+    font-size: 60px;
+}
+.about-text h2 span {
+    color: aqua;
+}
+
+/* Projects Section */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+}
+.projects-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    transition: background 0.5s, transform 0.5s;
+}
+.projects-list div:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills Section */
+.technical-bars .bar .progress-line {
+    position: relative;
+    height: 5px;
+    background-color: black;
+}
+.technical-bars .bar .progress-line span {
+    height: 100%;
+    display: block;
+    background-color: aqua;
+}
+
+/* Contact Section */
+.contact-text h2 {
+    font-size: 45px;
+    text-align: center;
+}
+.contact-text p {
+    text-align: center;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.contact-form form input,
+.contact-form form textarea {
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    border-color: rgb(51, 255, 255);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+}

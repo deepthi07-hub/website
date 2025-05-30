@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Kadiri Deepthi</h1>
+            <h3>I'm a <span class="text"></span></h3>
+            <p>I'm a passionate and enthusiastic fresher with a strong interest in web development. I recently completed my graduation from Prakasam Engineering College, where I gained a solid foundation in HTML, CSS, JavaScript, and other web development technologies. I'm excited to work on real-world projects and grow through hands-on experience.</p>
+            <div class="home-sci">
+                <a href="mailto:dhiya2269@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>   
+        </div>
+        <div class="image-pic">
+            <img src="images/imggg.jpg" alt="Kadiri Deepthi">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/imgg.jpg" alt="About Me">
+        </div>
+        <div class="about-text">
+            <h2>About<span> Me</span></h2>
+            <p>I enjoy learning new things, solving problems, and building projects that make a difference. Though I'm just starting my career, I'm eager to grow, take on challenges, and contribute to real-world solutions. I’m always excited to collaborate, explore innovative ideas, and improve my skills every day.</p>
+            <a href="#" class="btn-box">More about me</a>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1 class="sub-title">My <span>Projects</span></h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Calculator Application</h2>
+                    <p>Developed a basic desktop calculator using HTML, CSS, and JavaScript with real-time input validation. Implemented arithmetic operations and designed a simple user interface.</p>
+                </div>
+                <div>
+                    <h2>Personal Portfolio Website</h2>
+                    <p>Designed and developed a responsive personal portfolio. Focused on responsive design and clean user interface to ensure a professional look across devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container1">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+            <h1 class="headings1">Technical Skills</h1>
+            <div class="technical-bars">
+                <div class="bar">
+                    <i class='bx bxl-html5' style='color:rgb(237, 73, 9)'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-css3' style='color:rgb(9, 21, 236)'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-javascript' style='color:rgb(227, 242, 14)' ></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-python' style='color:rgb(51, 244, 38)' ></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together!</h4>
+            <p>I'm a passionate and motivated fresher eager to start my professional journey. If you have any opportunities, suggestions, or simply want to connect, feel free to reach out. I'm open to internships, entry-level roles, or collaborative projects where I can learn and grow. Looking forward to hearing from you!</p>
+            <div class="contact-list">
+                <li><i class='bx bx-send' ></i> dhiya2269@gmail.com</li>
+                <li><i class='bx bx-phone'></i> 8106243764</li>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Mobile number" pattern="\d{10}" maxlength="10" required>
+                <textarea name="" id="" cols="40" rows="" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
